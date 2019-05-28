@@ -1,0 +1,867 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		864E8D82C3534B926B6F0067 /* Pods_YWPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A35968F07FBBBB49F320C16 /* Pods_YWPlayer.framework */; };
+		F27D7DBA229D390E007246B7 /* GZPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F27D7DB9229D390E007246B7 /* GZPlayerView.m */; };
+		F27D7DBD229D3ACD007246B7 /* CommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F27D7DBC229D3ACD007246B7 /* CommonTool.m */; };
+		F27D7DD3229D40B4007246B7 /* player_oval@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27D7DBF229D40B4007246B7 /* player_oval@2x.png */; };
+		F27D7DD4229D40B4007246B7 /* player_icon_voice@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27D7DC0229D40B4007246B7 /* player_icon_voice@3x.png */; };
+		F27D7DD5229D40B4007246B7 /* gz_player_pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27D7DC1229D40B4007246B7 /* gz_player_pause@2x.png */; };
+		F27D7DD6229D40B4007246B7 /* gz_player_start@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27D7DC2229D40B4007246B7 /* gz_player_start@2x.png */; };
+		F27D7DD7229D40B4007246B7 /* player_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27D7DC3229D40B4007246B7 /* player_back@3x.png */; };
+		F27D7DD8229D40B4007246B7 /* player_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27D7DC4229D40B4007246B7 /* player_back@2x.png */; };
+		F27D7DD9229D40B4007246B7 /* gz_player_start@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27D7DC5229D40B4007246B7 /* gz_player_start@3x.png */; };
+		F27D7DDA229D40B4007246B7 /* gz_player_pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27D7DC6229D40B4007246B7 /* gz_player_pause@3x.png */; };
+		F27D7DDB229D40B4007246B7 /* player_icon_voice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27D7DC7229D40B4007246B7 /* player_icon_voice@2x.png */; };
+		F27D7DDC229D40B4007246B7 /* player_oval@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27D7DC8229D40B4007246B7 /* player_oval@3x.png */; };
+		F27D7DDD229D40B4007246B7 /* icon／back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27D7DC9229D40B4007246B7 /* icon／back@3x.png */; };
+		F27D7DDE229D40B4007246B7 /* icon／back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27D7DCA229D40B4007246B7 /* icon／back@2x.png */; };
+		F27D7DDF229D40B4007246B7 /* player_forword@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27D7DCB229D40B4007246B7 /* player_forword@3x.png */; };
+		F27D7DE0229D40B4007246B7 /* player_forword@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27D7DCC229D40B4007246B7 /* player_forword@2x.png */; };
+		F27D7DE1229D40B4007246B7 /* makecenter_pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27D7DCD229D40B4007246B7 /* makecenter_pause@2x.png */; };
+		F27D7DE2229D40B4007246B7 /* makecenter_refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27D7DCE229D40B4007246B7 /* makecenter_refresh@2x.png */; };
+		F27D7DE3229D40B4007246B7 /* player_no_class@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27D7DCF229D40B4007246B7 /* player_no_class@3x.png */; };
+		F27D7DE4229D40B5007246B7 /* player_no_class@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27D7DD0229D40B4007246B7 /* player_no_class@2x.png */; };
+		F27D7DE5229D40B5007246B7 /* makecenter_refresh@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27D7DD1229D40B4007246B7 /* makecenter_refresh@3x.png */; };
+		F27D7DE6229D40B5007246B7 /* makecenter_pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27D7DD2229D40B4007246B7 /* makecenter_pause@3x.png */; };
+		F2CABAE9229D2977006B1B42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CABAE8229D2977006B1B42 /* AppDelegate.m */; };
+		F2CABAEC229D2977006B1B42 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CABAEB229D2977006B1B42 /* ViewController.m */; };
+		F2CABAEF229D2977006B1B42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2CABAED229D2977006B1B42 /* Main.storyboard */; };
+		F2CABAF1229D2979006B1B42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2CABAF0229D2979006B1B42 /* Assets.xcassets */; };
+		F2CABAF4229D2979006B1B42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2CABAF2229D2979006B1B42 /* LaunchScreen.storyboard */; };
+		F2CABAF7229D2979006B1B42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CABAF6229D2979006B1B42 /* main.m */; };
+		F2CABB01229D2979006B1B42 /* YWPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CABB00229D2979006B1B42 /* YWPlayerTests.m */; };
+		F2CABB0C229D2979006B1B42 /* YWPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CABB0B229D2979006B1B42 /* YWPlayerUITests.m */; };
+		F2CABB24229D298A006B1B42 /* YWCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CABB1A229D298A006B1B42 /* YWCache.m */; };
+		F2CABB26229D298A006B1B42 /* YWAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CABB1D229D298A006B1B42 /* YWAVPlayer.m */; };
+		F2CABB27229D298A006B1B42 /* YWMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F2CABB20229D298A006B1B42 /* YWMusicPlayer.m */; };
+		F2CABB3D229D3802006B1B42 /* 宋冬野 - 安河桥.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2CABB2A229D3801006B1B42 /* 宋冬野 - 安河桥.mp3 */; };
+		F2CABB3E229D3802006B1B42 /* 包师语.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CABB2B229D3801006B1B42 /* 包师语.png */; };
+		F2CABB3F229D3802006B1B42 /* 徐歌阳 - 一万次悲伤 (Live).lrc in Resources */ = {isa = PBXBuildFile; fileRef = F2CABB2C229D3801006B1B42 /* 徐歌阳 - 一万次悲伤 (Live).lrc */; };
+		F2CABB40229D3802006B1B42 /* 徐歌阳 - 追梦赤子心 (Live).lrc in Resources */ = {isa = PBXBuildFile; fileRef = F2CABB2D229D3801006B1B42 /* 徐歌阳 - 追梦赤子心 (Live).lrc */; };
+		F2CABB41229D3802006B1B42 /* 朴翔 - 把悲伤留给自己 (Live).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2CABB2E229D3801006B1B42 /* 朴翔 - 把悲伤留给自己 (Live).mp3 */; };
+		F2CABB42229D3802006B1B42 /* 陈奕迅 - 陪你度过漫长岁月 (国语).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2CABB2F229D3801006B1B42 /* 陈奕迅 - 陪你度过漫长岁月 (国语).mp3 */; };
+		F2CABB43229D3802006B1B42 /* 宋冬野 - 安河桥.lrc in Resources */ = {isa = PBXBuildFile; fileRef = F2CABB30229D3801006B1B42 /* 宋冬野 - 安河桥.lrc */; };
+		F2CABB44229D3802006B1B42 /* 曾敏杰 - 伤痕 (Live).lrc in Resources */ = {isa = PBXBuildFile; fileRef = F2CABB31229D3801006B1B42 /* 曾敏杰 - 伤痕 (Live).lrc */; };
+		F2CABB45229D3802006B1B42 /* 255319.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2CABB32229D3801006B1B42 /* 255319.mp3 */; };
+		F2CABB46229D3802006B1B42 /* 陈奕迅 - 陪你度过漫长岁月 (国语).lrc in Resources */ = {isa = PBXBuildFile; fileRef = F2CABB33229D3801006B1B42 /* 陈奕迅 - 陪你度过漫长岁月 (国语).lrc */; };
+		F2CABB47229D3802006B1B42 /* 包师语 - 彩虹 (Live).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2CABB34229D3801006B1B42 /* 包师语 - 彩虹 (Live).mp3 */; };
+		F2CABB48229D3802006B1B42 /* 曾敏杰.png in Resources */ = {isa = PBXBuildFile; fileRef = F2CABB35229D3801006B1B42 /* 曾敏杰.png */; };
+		F2CABB49229D3802006B1B42 /* 朴翔.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2CABB36229D3801006B1B42 /* 朴翔.jpg */; };
+		F2CABB4A229D3802006B1B42 /* 徐歌阳 - 一万次悲伤 (Live).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2CABB37229D3801006B1B42 /* 徐歌阳 - 一万次悲伤 (Live).mp3 */; };
+		F2CABB4B229D3802006B1B42 /* 安河桥北.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2CABB38229D3801006B1B42 /* 安河桥北.jpg */; };
+		F2CABB4C229D3802006B1B42 /* 曾敏杰 - 伤痕 (Live).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2CABB39229D3801006B1B42 /* 曾敏杰 - 伤痕 (Live).mp3 */; };
+		F2CABB4D229D3802006B1B42 /* 朴翔 - 把悲伤留给自己 (Live).lrc in Resources */ = {isa = PBXBuildFile; fileRef = F2CABB3A229D3801006B1B42 /* 朴翔 - 把悲伤留给自己 (Live).lrc */; };
+		F2CABB4E229D3802006B1B42 /* 徐歌阳 - 追梦赤子心 (Live).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F2CABB3B229D3802006B1B42 /* 徐歌阳 - 追梦赤子心 (Live).mp3 */; };
+		F2CABB4F229D3802006B1B42 /* 包师语 - 彩虹 (Live).lrc in Resources */ = {isa = PBXBuildFile; fileRef = F2CABB3C229D3802006B1B42 /* 包师语 - 彩虹 (Live).lrc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2CABAFD229D2979006B1B42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2CABADC229D2977006B1B42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2CABAE3229D2977006B1B42;
+			remoteInfo = YWPlayer;
+		};
+		F2CABB08229D2979006B1B42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2CABADC229D2977006B1B42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2CABAE3229D2977006B1B42;
+			remoteInfo = YWPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D1085CF4CB88DFEBF775F93 /* Pods-YWPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-YWPlayer/Pods-YWPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		9A35968F07FBBBB49F320C16 /* Pods_YWPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YWPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B93098EEA48CA89B97CE93DA /* Pods-YWPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YWPlayer/Pods-YWPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		F27D7DB8229D390E007246B7 /* GZPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZPlayerView.h; sourceTree = "<group>"; };
+		F27D7DB9229D390E007246B7 /* GZPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZPlayerView.m; sourceTree = "<group>"; };
+		F27D7DBB229D3ACD007246B7 /* CommonTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonTool.h; sourceTree = "<group>"; };
+		F27D7DBC229D3ACD007246B7 /* CommonTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonTool.m; sourceTree = "<group>"; };
+		F27D7DBF229D40B4007246B7 /* player_oval@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_oval@2x.png"; sourceTree = "<group>"; };
+		F27D7DC0229D40B4007246B7 /* player_icon_voice@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_icon_voice@3x.png"; sourceTree = "<group>"; };
+		F27D7DC1229D40B4007246B7 /* gz_player_pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gz_player_pause@2x.png"; sourceTree = "<group>"; };
+		F27D7DC2229D40B4007246B7 /* gz_player_start@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gz_player_start@2x.png"; sourceTree = "<group>"; };
+		F27D7DC3229D40B4007246B7 /* player_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_back@3x.png"; sourceTree = "<group>"; };
+		F27D7DC4229D40B4007246B7 /* player_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_back@2x.png"; sourceTree = "<group>"; };
+		F27D7DC5229D40B4007246B7 /* gz_player_start@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gz_player_start@3x.png"; sourceTree = "<group>"; };
+		F27D7DC6229D40B4007246B7 /* gz_player_pause@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gz_player_pause@3x.png"; sourceTree = "<group>"; };
+		F27D7DC7229D40B4007246B7 /* player_icon_voice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_icon_voice@2x.png"; sourceTree = "<group>"; };
+		F27D7DC8229D40B4007246B7 /* player_oval@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_oval@3x.png"; sourceTree = "<group>"; };
+		F27D7DC9229D40B4007246B7 /* icon／back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／back@3x.png"; sourceTree = "<group>"; };
+		F27D7DCA229D40B4007246B7 /* icon／back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon／back@2x.png"; sourceTree = "<group>"; };
+		F27D7DCB229D40B4007246B7 /* player_forword@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_forword@3x.png"; sourceTree = "<group>"; };
+		F27D7DCC229D40B4007246B7 /* player_forword@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_forword@2x.png"; sourceTree = "<group>"; };
+		F27D7DCD229D40B4007246B7 /* makecenter_pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "makecenter_pause@2x.png"; sourceTree = "<group>"; };
+		F27D7DCE229D40B4007246B7 /* makecenter_refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "makecenter_refresh@2x.png"; sourceTree = "<group>"; };
+		F27D7DCF229D40B4007246B7 /* player_no_class@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_no_class@3x.png"; sourceTree = "<group>"; };
+		F27D7DD0229D40B4007246B7 /* player_no_class@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "player_no_class@2x.png"; sourceTree = "<group>"; };
+		F27D7DD1229D40B4007246B7 /* makecenter_refresh@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "makecenter_refresh@3x.png"; sourceTree = "<group>"; };
+		F27D7DD2229D40B4007246B7 /* makecenter_pause@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "makecenter_pause@3x.png"; sourceTree = "<group>"; };
+		F2CABAE4229D2977006B1B42 /* YWPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YWPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2CABAE7229D2977006B1B42 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F2CABAE8229D2977006B1B42 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F2CABAEA229D2977006B1B42 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F2CABAEB229D2977006B1B42 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F2CABAEE229D2977006B1B42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2CABAF0229D2979006B1B42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2CABAF3229D2979006B1B42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2CABAF5229D2979006B1B42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2CABAF6229D2979006B1B42 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F2CABAFC229D2979006B1B42 /* YWPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YWPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2CABB00229D2979006B1B42 /* YWPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YWPlayerTests.m; sourceTree = "<group>"; };
+		F2CABB02229D2979006B1B42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2CABB07229D2979006B1B42 /* YWPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YWPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2CABB0B229D2979006B1B42 /* YWPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YWPlayerUITests.m; sourceTree = "<group>"; };
+		F2CABB0D229D2979006B1B42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2CABB1A229D298A006B1B42 /* YWCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWCache.m; sourceTree = "<group>"; };
+		F2CABB1B229D298A006B1B42 /* YWMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWMusicPlayer.h; sourceTree = "<group>"; };
+		F2CABB1D229D298A006B1B42 /* YWAVPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWAVPlayer.m; sourceTree = "<group>"; };
+		F2CABB1F229D298A006B1B42 /* YWCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWCache.h; sourceTree = "<group>"; };
+		F2CABB20229D298A006B1B42 /* YWMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YWMusicPlayer.m; sourceTree = "<group>"; };
+		F2CABB22229D298A006B1B42 /* YWAVPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YWAVPlayer.h; sourceTree = "<group>"; };
+		F2CABB2A229D3801006B1B42 /* 宋冬野 - 安河桥.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "宋冬野 - 安河桥.mp3"; sourceTree = "<group>"; };
+		F2CABB2B229D3801006B1B42 /* 包师语.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "包师语.png"; sourceTree = "<group>"; };
+		F2CABB2C229D3801006B1B42 /* 徐歌阳 - 一万次悲伤 (Live).lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "徐歌阳 - 一万次悲伤 (Live).lrc"; sourceTree = "<group>"; };
+		F2CABB2D229D3801006B1B42 /* 徐歌阳 - 追梦赤子心 (Live).lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "徐歌阳 - 追梦赤子心 (Live).lrc"; sourceTree = "<group>"; };
+		F2CABB2E229D3801006B1B42 /* 朴翔 - 把悲伤留给自己 (Live).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "朴翔 - 把悲伤留给自己 (Live).mp3"; sourceTree = "<group>"; };
+		F2CABB2F229D3801006B1B42 /* 陈奕迅 - 陪你度过漫长岁月 (国语).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "陈奕迅 - 陪你度过漫长岁月 (国语).mp3"; sourceTree = "<group>"; };
+		F2CABB30229D3801006B1B42 /* 宋冬野 - 安河桥.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "宋冬野 - 安河桥.lrc"; sourceTree = "<group>"; };
+		F2CABB31229D3801006B1B42 /* 曾敏杰 - 伤痕 (Live).lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "曾敏杰 - 伤痕 (Live).lrc"; sourceTree = "<group>"; };
+		F2CABB32229D3801006B1B42 /* 255319.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 255319.mp3; sourceTree = "<group>"; };
+		F2CABB33229D3801006B1B42 /* 陈奕迅 - 陪你度过漫长岁月 (国语).lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "陈奕迅 - 陪你度过漫长岁月 (国语).lrc"; sourceTree = "<group>"; };
+		F2CABB34229D3801006B1B42 /* 包师语 - 彩虹 (Live).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "包师语 - 彩虹 (Live).mp3"; sourceTree = "<group>"; };
+		F2CABB35229D3801006B1B42 /* 曾敏杰.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "曾敏杰.png"; sourceTree = "<group>"; };
+		F2CABB36229D3801006B1B42 /* 朴翔.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "朴翔.jpg"; sourceTree = "<group>"; };
+		F2CABB37229D3801006B1B42 /* 徐歌阳 - 一万次悲伤 (Live).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "徐歌阳 - 一万次悲伤 (Live).mp3"; sourceTree = "<group>"; };
+		F2CABB38229D3801006B1B42 /* 安河桥北.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "安河桥北.jpg"; sourceTree = "<group>"; };
+		F2CABB39229D3801006B1B42 /* 曾敏杰 - 伤痕 (Live).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "曾敏杰 - 伤痕 (Live).mp3"; sourceTree = "<group>"; };
+		F2CABB3A229D3801006B1B42 /* 朴翔 - 把悲伤留给自己 (Live).lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "朴翔 - 把悲伤留给自己 (Live).lrc"; sourceTree = "<group>"; };
+		F2CABB3B229D3802006B1B42 /* 徐歌阳 - 追梦赤子心 (Live).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "徐歌阳 - 追梦赤子心 (Live).mp3"; sourceTree = "<group>"; };
+		F2CABB3C229D3802006B1B42 /* 包师语 - 彩虹 (Live).lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "包师语 - 彩虹 (Live).lrc"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2CABAE1229D2977006B1B42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				864E8D82C3534B926B6F0067 /* Pods_YWPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2CABAF9229D2979006B1B42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2CABB04229D2979006B1B42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3078A082A4569090B4162786 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B93098EEA48CA89B97CE93DA /* Pods-YWPlayer.debug.xcconfig */,
+				6D1085CF4CB88DFEBF775F93 /* Pods-YWPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C5DA7EBCABA487CD2FABBAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A35968F07FBBBB49F320C16 /* Pods_YWPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F27D7DBE229D40B4007246B7 /* player */ = {
+			isa = PBXGroup;
+			children = (
+				F27D7DBF229D40B4007246B7 /* player_oval@2x.png */,
+				F27D7DC0229D40B4007246B7 /* player_icon_voice@3x.png */,
+				F27D7DC1229D40B4007246B7 /* gz_player_pause@2x.png */,
+				F27D7DC2229D40B4007246B7 /* gz_player_start@2x.png */,
+				F27D7DC3229D40B4007246B7 /* player_back@3x.png */,
+				F27D7DC4229D40B4007246B7 /* player_back@2x.png */,
+				F27D7DC5229D40B4007246B7 /* gz_player_start@3x.png */,
+				F27D7DC6229D40B4007246B7 /* gz_player_pause@3x.png */,
+				F27D7DC7229D40B4007246B7 /* player_icon_voice@2x.png */,
+				F27D7DC8229D40B4007246B7 /* player_oval@3x.png */,
+				F27D7DC9229D40B4007246B7 /* icon／back@3x.png */,
+				F27D7DCA229D40B4007246B7 /* icon／back@2x.png */,
+				F27D7DCB229D40B4007246B7 /* player_forword@3x.png */,
+				F27D7DCC229D40B4007246B7 /* player_forword@2x.png */,
+				F27D7DCD229D40B4007246B7 /* makecenter_pause@2x.png */,
+				F27D7DCE229D40B4007246B7 /* makecenter_refresh@2x.png */,
+				F27D7DCF229D40B4007246B7 /* player_no_class@3x.png */,
+				F27D7DD0229D40B4007246B7 /* player_no_class@2x.png */,
+				F27D7DD1229D40B4007246B7 /* makecenter_refresh@3x.png */,
+				F27D7DD2229D40B4007246B7 /* makecenter_pause@3x.png */,
+			);
+			path = player;
+			sourceTree = "<group>";
+		};
+		F2CABADB229D2977006B1B42 = {
+			isa = PBXGroup;
+			children = (
+				F2CABAE6229D2977006B1B42 /* YWPlayer */,
+				F2CABAFF229D2979006B1B42 /* YWPlayerTests */,
+				F2CABB0A229D2979006B1B42 /* YWPlayerUITests */,
+				F2CABAE5229D2977006B1B42 /* Products */,
+				3078A082A4569090B4162786 /* Pods */,
+				9C5DA7EBCABA487CD2FABBAC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F2CABAE5229D2977006B1B42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2CABAE4229D2977006B1B42 /* YWPlayer.app */,
+				F2CABAFC229D2979006B1B42 /* YWPlayerTests.xctest */,
+				F2CABB07229D2979006B1B42 /* YWPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2CABAE6229D2977006B1B42 /* YWPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				F27D7DBE229D40B4007246B7 /* player */,
+				F2CABB29229D37E9006B1B42 /* Music */,
+				F2CABB19229D298A006B1B42 /* YWPlayer */,
+				F2CABAE7229D2977006B1B42 /* AppDelegate.h */,
+				F2CABAE8229D2977006B1B42 /* AppDelegate.m */,
+				F2CABAEA229D2977006B1B42 /* ViewController.h */,
+				F2CABAEB229D2977006B1B42 /* ViewController.m */,
+				F27D7DB8229D390E007246B7 /* GZPlayerView.h */,
+				F27D7DB9229D390E007246B7 /* GZPlayerView.m */,
+				F2CABAED229D2977006B1B42 /* Main.storyboard */,
+				F2CABAF0229D2979006B1B42 /* Assets.xcassets */,
+				F2CABAF2229D2979006B1B42 /* LaunchScreen.storyboard */,
+				F2CABAF5229D2979006B1B42 /* Info.plist */,
+				F2CABAF6229D2979006B1B42 /* main.m */,
+				F27D7DBB229D3ACD007246B7 /* CommonTool.h */,
+				F27D7DBC229D3ACD007246B7 /* CommonTool.m */,
+			);
+			path = YWPlayer;
+			sourceTree = "<group>";
+		};
+		F2CABAFF229D2979006B1B42 /* YWPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2CABB00229D2979006B1B42 /* YWPlayerTests.m */,
+				F2CABB02229D2979006B1B42 /* Info.plist */,
+			);
+			path = YWPlayerTests;
+			sourceTree = "<group>";
+		};
+		F2CABB0A229D2979006B1B42 /* YWPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2CABB0B229D2979006B1B42 /* YWPlayerUITests.m */,
+				F2CABB0D229D2979006B1B42 /* Info.plist */,
+			);
+			path = YWPlayerUITests;
+			sourceTree = "<group>";
+		};
+		F2CABB19229D298A006B1B42 /* YWPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				F2CABB22229D298A006B1B42 /* YWAVPlayer.h */,
+				F2CABB1D229D298A006B1B42 /* YWAVPlayer.m */,
+				F2CABB1F229D298A006B1B42 /* YWCache.h */,
+				F2CABB1A229D298A006B1B42 /* YWCache.m */,
+				F2CABB1B229D298A006B1B42 /* YWMusicPlayer.h */,
+				F2CABB20229D298A006B1B42 /* YWMusicPlayer.m */,
+			);
+			path = YWPlayer;
+			sourceTree = "<group>";
+		};
+		F2CABB29229D37E9006B1B42 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				F2CABB32229D3801006B1B42 /* 255319.mp3 */,
+				F2CABB38229D3801006B1B42 /* 安河桥北.jpg */,
+				F2CABB3C229D3802006B1B42 /* 包师语 - 彩虹 (Live).lrc */,
+				F2CABB34229D3801006B1B42 /* 包师语 - 彩虹 (Live).mp3 */,
+				F2CABB2B229D3801006B1B42 /* 包师语.png */,
+				F2CABB31229D3801006B1B42 /* 曾敏杰 - 伤痕 (Live).lrc */,
+				F2CABB39229D3801006B1B42 /* 曾敏杰 - 伤痕 (Live).mp3 */,
+				F2CABB35229D3801006B1B42 /* 曾敏杰.png */,
+				F2CABB33229D3801006B1B42 /* 陈奕迅 - 陪你度过漫长岁月 (国语).lrc */,
+				F2CABB2F229D3801006B1B42 /* 陈奕迅 - 陪你度过漫长岁月 (国语).mp3 */,
+				F2CABB3A229D3801006B1B42 /* 朴翔 - 把悲伤留给自己 (Live).lrc */,
+				F2CABB2E229D3801006B1B42 /* 朴翔 - 把悲伤留给自己 (Live).mp3 */,
+				F2CABB36229D3801006B1B42 /* 朴翔.jpg */,
+				F2CABB30229D3801006B1B42 /* 宋冬野 - 安河桥.lrc */,
+				F2CABB2A229D3801006B1B42 /* 宋冬野 - 安河桥.mp3 */,
+				F2CABB2C229D3801006B1B42 /* 徐歌阳 - 一万次悲伤 (Live).lrc */,
+				F2CABB37229D3801006B1B42 /* 徐歌阳 - 一万次悲伤 (Live).mp3 */,
+				F2CABB2D229D3801006B1B42 /* 徐歌阳 - 追梦赤子心 (Live).lrc */,
+				F2CABB3B229D3802006B1B42 /* 徐歌阳 - 追梦赤子心 (Live).mp3 */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2CABAE3229D2977006B1B42 /* YWPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2CABB10229D2979006B1B42 /* Build configuration list for PBXNativeTarget "YWPlayer" */;
+			buildPhases = (
+				3AAD2D018C42A98B38CA7587 /* [CP] Check Pods Manifest.lock */,
+				F2CABAE0229D2977006B1B42 /* Sources */,
+				F2CABAE1229D2977006B1B42 /* Frameworks */,
+				F2CABAE2229D2977006B1B42 /* Resources */,
+				C616AE10169208A97253A3C5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YWPlayer;
+			productName = YWPlayer;
+			productReference = F2CABAE4229D2977006B1B42 /* YWPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2CABAFB229D2979006B1B42 /* YWPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2CABB13229D2979006B1B42 /* Build configuration list for PBXNativeTarget "YWPlayerTests" */;
+			buildPhases = (
+				F2CABAF8229D2979006B1B42 /* Sources */,
+				F2CABAF9229D2979006B1B42 /* Frameworks */,
+				F2CABAFA229D2979006B1B42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2CABAFE229D2979006B1B42 /* PBXTargetDependency */,
+			);
+			name = YWPlayerTests;
+			productName = YWPlayerTests;
+			productReference = F2CABAFC229D2979006B1B42 /* YWPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2CABB06229D2979006B1B42 /* YWPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2CABB16229D2979006B1B42 /* Build configuration list for PBXNativeTarget "YWPlayerUITests" */;
+			buildPhases = (
+				F2CABB03229D2979006B1B42 /* Sources */,
+				F2CABB04229D2979006B1B42 /* Frameworks */,
+				F2CABB05229D2979006B1B42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2CABB09229D2979006B1B42 /* PBXTargetDependency */,
+			);
+			name = YWPlayerUITests;
+			productName = YWPlayerUITests;
+			productReference = F2CABB07229D2979006B1B42 /* YWPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2CABADC229D2977006B1B42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = dyw;
+				TargetAttributes = {
+					F2CABAE3229D2977006B1B42 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					F2CABAFB229D2979006B1B42 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = F2CABAE3229D2977006B1B42;
+					};
+					F2CABB06229D2979006B1B42 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = F2CABAE3229D2977006B1B42;
+					};
+				};
+			};
+			buildConfigurationList = F2CABADF229D2977006B1B42 /* Build configuration list for PBXProject "YWPlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2CABADB229D2977006B1B42;
+			productRefGroup = F2CABAE5229D2977006B1B42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2CABAE3229D2977006B1B42 /* YWPlayer */,
+				F2CABAFB229D2979006B1B42 /* YWPlayerTests */,
+				F2CABB06229D2979006B1B42 /* YWPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2CABAE2229D2977006B1B42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F27D7DD3229D40B4007246B7 /* player_oval@2x.png in Resources */,
+				F27D7DE2229D40B4007246B7 /* makecenter_refresh@2x.png in Resources */,
+				F2CABB41229D3802006B1B42 /* 朴翔 - 把悲伤留给自己 (Live).mp3 in Resources */,
+				F2CABB4D229D3802006B1B42 /* 朴翔 - 把悲伤留给自己 (Live).lrc in Resources */,
+				F2CABB47229D3802006B1B42 /* 包师语 - 彩虹 (Live).mp3 in Resources */,
+				F27D7DE1229D40B4007246B7 /* makecenter_pause@2x.png in Resources */,
+				F27D7DDE229D40B4007246B7 /* icon／back@2x.png in Resources */,
+				F2CABAF4229D2979006B1B42 /* LaunchScreen.storyboard in Resources */,
+				F27D7DD5229D40B4007246B7 /* gz_player_pause@2x.png in Resources */,
+				F2CABB4F229D3802006B1B42 /* 包师语 - 彩虹 (Live).lrc in Resources */,
+				F27D7DDB229D40B4007246B7 /* player_icon_voice@2x.png in Resources */,
+				F27D7DE0229D40B4007246B7 /* player_forword@2x.png in Resources */,
+				F27D7DD6229D40B4007246B7 /* gz_player_start@2x.png in Resources */,
+				F2CABB3E229D3802006B1B42 /* 包师语.png in Resources */,
+				F2CABAF1229D2979006B1B42 /* Assets.xcassets in Resources */,
+				F27D7DDA229D40B4007246B7 /* gz_player_pause@3x.png in Resources */,
+				F27D7DD4229D40B4007246B7 /* player_icon_voice@3x.png in Resources */,
+				F2CABB40229D3802006B1B42 /* 徐歌阳 - 追梦赤子心 (Live).lrc in Resources */,
+				F27D7DDC229D40B4007246B7 /* player_oval@3x.png in Resources */,
+				F2CABB43229D3802006B1B42 /* 宋冬野 - 安河桥.lrc in Resources */,
+				F2CABB46229D3802006B1B42 /* 陈奕迅 - 陪你度过漫长岁月 (国语).lrc in Resources */,
+				F27D7DE3229D40B4007246B7 /* player_no_class@3x.png in Resources */,
+				F27D7DD7229D40B4007246B7 /* player_back@3x.png in Resources */,
+				F27D7DDF229D40B4007246B7 /* player_forword@3x.png in Resources */,
+				F2CABB42229D3802006B1B42 /* 陈奕迅 - 陪你度过漫长岁月 (国语).mp3 in Resources */,
+				F27D7DE6229D40B5007246B7 /* makecenter_pause@3x.png in Resources */,
+				F2CABB4B229D3802006B1B42 /* 安河桥北.jpg in Resources */,
+				F27D7DD9229D40B4007246B7 /* gz_player_start@3x.png in Resources */,
+				F2CABB48229D3802006B1B42 /* 曾敏杰.png in Resources */,
+				F2CABB3D229D3802006B1B42 /* 宋冬野 - 安河桥.mp3 in Resources */,
+				F2CABB3F229D3802006B1B42 /* 徐歌阳 - 一万次悲伤 (Live).lrc in Resources */,
+				F27D7DDD229D40B4007246B7 /* icon／back@3x.png in Resources */,
+				F27D7DD8229D40B4007246B7 /* player_back@2x.png in Resources */,
+				F2CABB4C229D3802006B1B42 /* 曾敏杰 - 伤痕 (Live).mp3 in Resources */,
+				F27D7DE4229D40B5007246B7 /* player_no_class@2x.png in Resources */,
+				F2CABB4A229D3802006B1B42 /* 徐歌阳 - 一万次悲伤 (Live).mp3 in Resources */,
+				F2CABB4E229D3802006B1B42 /* 徐歌阳 - 追梦赤子心 (Live).mp3 in Resources */,
+				F27D7DE5229D40B5007246B7 /* makecenter_refresh@3x.png in Resources */,
+				F2CABB45229D3802006B1B42 /* 255319.mp3 in Resources */,
+				F2CABB49229D3802006B1B42 /* 朴翔.jpg in Resources */,
+				F2CABB44229D3802006B1B42 /* 曾敏杰 - 伤痕 (Live).lrc in Resources */,
+				F2CABAEF229D2977006B1B42 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2CABAFA229D2979006B1B42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2CABB05229D2979006B1B42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AAD2D018C42A98B38CA7587 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YWPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C616AE10169208A97253A3C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YWPlayer/Pods-YWPlayer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YWPlayer/Pods-YWPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2CABAE0229D2977006B1B42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2CABB27229D298A006B1B42 /* YWMusicPlayer.m in Sources */,
+				F2CABB24229D298A006B1B42 /* YWCache.m in Sources */,
+				F2CABAEC229D2977006B1B42 /* ViewController.m in Sources */,
+				F27D7DBA229D390E007246B7 /* GZPlayerView.m in Sources */,
+				F2CABB26229D298A006B1B42 /* YWAVPlayer.m in Sources */,
+				F2CABAF7229D2979006B1B42 /* main.m in Sources */,
+				F27D7DBD229D3ACD007246B7 /* CommonTool.m in Sources */,
+				F2CABAE9229D2977006B1B42 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2CABAF8229D2979006B1B42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2CABB01229D2979006B1B42 /* YWPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2CABB03229D2979006B1B42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2CABB0C229D2979006B1B42 /* YWPlayerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2CABAFE229D2979006B1B42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2CABAE3229D2977006B1B42 /* YWPlayer */;
+			targetProxy = F2CABAFD229D2979006B1B42 /* PBXContainerItemProxy */;
+		};
+		F2CABB09229D2979006B1B42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2CABAE3229D2977006B1B42 /* YWPlayer */;
+			targetProxy = F2CABB08229D2979006B1B42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2CABAED229D2977006B1B42 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2CABAEE229D2977006B1B42 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2CABAF2229D2979006B1B42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2CABAF3229D2979006B1B42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2CABB0E229D2979006B1B42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F2CABB0F229D2979006B1B42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2CABB11229D2979006B1B42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B93098EEA48CA89B97CE93DA /* Pods-YWPlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YWPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = c.YWPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2CABB12229D2979006B1B42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D1085CF4CB88DFEBF775F93 /* Pods-YWPlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YWPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = c.YWPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F2CABB14229D2979006B1B42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YWPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = c.YWPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YWPlayer.app/YWPlayer";
+			};
+			name = Debug;
+		};
+		F2CABB15229D2979006B1B42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YWPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = c.YWPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YWPlayer.app/YWPlayer";
+			};
+			name = Release;
+		};
+		F2CABB17229D2979006B1B42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YWPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = c.YWPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YWPlayer;
+			};
+			name = Debug;
+		};
+		F2CABB18229D2979006B1B42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YWPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = c.YWPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YWPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2CABADF229D2977006B1B42 /* Build configuration list for PBXProject "YWPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2CABB0E229D2979006B1B42 /* Debug */,
+				F2CABB0F229D2979006B1B42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2CABB10229D2979006B1B42 /* Build configuration list for PBXNativeTarget "YWPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2CABB11229D2979006B1B42 /* Debug */,
+				F2CABB12229D2979006B1B42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2CABB13229D2979006B1B42 /* Build configuration list for PBXNativeTarget "YWPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2CABB14229D2979006B1B42 /* Debug */,
+				F2CABB15229D2979006B1B42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2CABB16229D2979006B1B42 /* Build configuration list for PBXNativeTarget "YWPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2CABB17229D2979006B1B42 /* Debug */,
+				F2CABB18229D2979006B1B42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2CABADC229D2977006B1B42 /* Project object */;
+}
