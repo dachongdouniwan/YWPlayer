@@ -52,9 +52,9 @@ static YWMusicPlayer *musicPlayer = nil;
             return ywMusicPlayer;
         }
     }else{
+        musicPlayer.originUrl = nil;
         //断言url不能用
         NSAssert(NO, @"url不可用");
-//        [SVProgressHUD yw_showErrorMessage:@"播放失败，播放链接无效"];
     }
     return nil;
 }
@@ -65,7 +65,7 @@ static YWMusicPlayer *musicPlayer = nil;
     dispatch_once(&onceToken, ^{
         musicPlayer = [super allocWithZone:zone];
         AVAudioSession *audioSession=[AVAudioSession sharedInstance];
-        [audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
+        [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
         [audioSession setActive:YES error:nil];
     });
     return  musicPlayer;
@@ -85,13 +85,27 @@ static YWMusicPlayer *musicPlayer = nil;
 
 //重写play方法
 -(void)play{
-    [super play];
+    /// 如果originUrl为nil则认为此播放器已失效不能进行播放
+    if (self.originUrl) {
+        [super play];
+    }
 }
 
 
 //重写pause方法监听暂停状态
 - (void)pause{
-    [super pause];
+    if (self.originUrl) {
+        [super pause];
+    }
+}
+
+
+//重写快进方法
+- (void)seekToTime:(CMTime)time completionHandler:(void (^)(BOOL finished))completionHandler{
+    /// 如果originUrl为nil则认为此播放器已失效不能进行播放
+    if (self.originUrl) {
+        [super seekToTime:time completionHandler:completionHandler];
+    }
 }
 
 
@@ -125,10 +139,13 @@ static YWMusicPlayer *musicPlayer = nil;
 
 //播放结束时重置部分属性
 -(void)p_resetPlayerProperty{
-    //    self.originUrl = nil;
-    self.playComplateBlock = nil;
-    self.playProgressBlock = nil;
-    self.cacheTimeProgressBlock = nil;
+    if (!self.isReapt) {
+        self.originUrl = nil;
+        self.playComplateBlock = nil;
+        self.playProgressBlock = nil;
+        self.cacheTimeProgressBlock = nil;
+        self.playTotleTimeBlock = nil;
+    }
 }
 
 
@@ -396,7 +413,6 @@ static YWMusicPlayer *musicPlayer = nil;
         [self.delegate yw_musicPlayerPlayError:self currentPlayerItem:self.currentItem];
     }
     [self p_resetPlayerProperty];
-//    [SVProgressHUD yw_showErrorMessage:@"播放失败"];
 }
 
 
@@ -405,10 +421,10 @@ static YWMusicPlayer *musicPlayer = nil;
     if (self.isPlaying) {
         [self pause];
     }
+    self.isReapt = NO;/// 手动取消时设置为NO清空对应的block
     [self removeNotificationAndObserver];//手动取消播放也要移除对应playerItem对应的观察者和监听者
     !self.playComplateBlock?nil:self.playComplateBlock(YWMusicPlayerCancleComplate);
     [self p_resetPlayerProperty];
-    
 }
 
 

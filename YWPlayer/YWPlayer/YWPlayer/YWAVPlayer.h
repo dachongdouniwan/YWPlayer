@@ -87,6 +87,9 @@ typedef void(^YWAVPlayerComplateBlock)(YWAVPlayerComplate);
 //当前播放进度
 @property (nonatomic,copy) void(^ _Nullable playProgressBlock)(CMTime time);
 
+///获取当前播放Url音视频总长度
+@property (nonatomic,copy) void(^ _Nullable playTotleTimeBlock)(float totleTime);
+
 //缓冲，总长度block回调
 @property (nonatomic,copy) void(^ _Nullable cacheTimeProgressBlock)(float totleTime,float cacheTime);
 

@@ -8,7 +8,6 @@
 
 #import "YWAVPlayer.h"
 #import "YWCache.h"
-//#import "SVProgressHUD+YWSVPHud.h"
 
 @interface YWAVPlayer()
 
@@ -30,7 +29,6 @@
 static YWAVPlayer *player = nil;
 
 +(instancetype)shareInstance{
-    NSAssert(player!=nil, @"播放器必须通过url进行初始化");
     return player;
 }
 
@@ -52,9 +50,7 @@ static YWAVPlayer *player = nil;
             return ywPlayer;
         }
     }else{
-        //断言url不能用
-        NSAssert(NO, @"url不可用");
-//        [SVProgressHUD yw_showErrorMessage:@"播放失败，播放链接无效"];
+        player.originUrl = nil;
     }
     return nil;
 }
@@ -65,7 +61,7 @@ static YWAVPlayer *player = nil;
     dispatch_once(&onceToken, ^{
         player = [super allocWithZone:zone];
         AVAudioSession *audioSession=[AVAudioSession sharedInstance];
-        [audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
+        [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
         [audioSession setActive:YES error:nil];
     });
     return  player;
@@ -85,15 +81,28 @@ static YWAVPlayer *player = nil;
 
 //重写play方法
 -(void)play{
-    [super play];
+    /// 如果originUrl为nil则认为此播放器已失效不能进行播放
+    if (self.originUrl) {
+        [super play];
+    }
 }
 
 
 //重写pause方法监听暂停状态
 - (void)pause{
-    [super pause];
+    if (self.originUrl) {
+        [super pause];
+    }
 }
 
+
+//重写快进方法
+- (void)seekToTime:(CMTime)time completionHandler:(void (^)(BOOL finished))completionHandler{
+    /// 如果originUrl为nil则认为此播放器已失效不能进行播放
+    if (self.originUrl) {
+        [super seekToTime:time completionHandler:completionHandler];
+    }
+}
 
 ///判断是否正在播放
 -(BOOL)isPlaying{
@@ -103,6 +112,7 @@ static YWAVPlayer *player = nil;
         return NO;
     }
 }
+
 
 
 #pragma mark ----缓存播放时间
@@ -125,9 +135,13 @@ static YWAVPlayer *player = nil;
 
 //播放结束时重置部分属性
 -(void)p_resetPlayerProperty{
-    self.playComplateBlock = nil;
-    self.playProgressBlock = nil;
-    self.cacheTimeProgressBlock = nil;
+    if (!self.isReapt) {
+        self.originUrl = nil;
+        self.playComplateBlock = nil;
+        self.playProgressBlock = nil;
+        self.cacheTimeProgressBlock = nil;
+        self.playTotleTimeBlock = nil;
+    }
 }
 
 
@@ -237,7 +251,7 @@ static YWAVPlayer *player = nil;
 #pragma mark ----url处理
 
 +(NSURL*)p_handleUrl:(NSString*)url{
-
+    
     if (![self p_checkUrl:url]) {
         return nil;
     }
@@ -247,14 +261,6 @@ static YWAVPlayer *player = nil;
         requestUrl = [NSURL URLWithString:[NSString stringWithFormat:@"%@",url]];
     }else{
         requestUrl = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@",url]];
-    }
-    
-    if (player.isCache) {
-        if (player.originUrl) {
-            [player p_saveCacheMusicCurrentPlayeTime:player.originUrl];
-        }else{
-            [player p_saveCacheMusicCurrentPlayeTime:[NSString stringWithFormat:@"%@",url]];
-        }
     }
     
     //判断是否需要转吗，如果需要则直接使用
@@ -268,7 +274,6 @@ static YWAVPlayer *player = nil;
             requestUrl = [NSURL fileURLWithPath:url];
         }
     }
-    
     
     //更新url
     player.originUrl = url;
@@ -389,7 +394,6 @@ static YWAVPlayer *player = nil;
             }
         }
     }
-    [[YWCache shareInstance] removeObjectForKey:self.originUrl];
     [self p_resetPlayerProperty];
 }
 
@@ -402,7 +406,6 @@ static YWAVPlayer *player = nil;
     if ([self.delegate respondsToSelector:@selector(yw_playerPlayError:currentPlayerItem:)]) {
         [self.delegate yw_playerPlayError:self currentPlayerItem:self.currentItem];
     }
-//    [SVProgressHUD yw_showErrorMessage:errorMessage];
     [self p_resetPlayerProperty];
 }
 
@@ -412,6 +415,7 @@ static YWAVPlayer *player = nil;
     if (self.isPlaying) {
         [self pause];
     }
+    self.isReapt = NO;/// 手动取消时设置为NO清空对应的block
     [self removeNotificationAndObserver];//手动取消播放也要移除对应playerItem对应的观察者和监听者
     !self.playComplateBlock?nil:self.playComplateBlock(YWAVPlayerCancleComplate);
     [self p_resetPlayerProperty];
@@ -493,6 +497,7 @@ static YWAVPlayer *player = nil;
         if(status==AVPlayerStatusReadyToPlay){
             ///获取音频长度
             NSLog(@"正在播放...，视频总长度:%.2f",CMTimeGetSeconds(playerItem.duration));
+            !self.playTotleTimeBlock?nil:self.playTotleTimeBlock(CMTimeGetSeconds(playerItem.duration));
             if ([self.delegate respondsToSelector:@selector(yw_player:currentPlayerItem:)]) {
                 [self.delegate yw_player:self currentPlayerItem:playerItem];
             }

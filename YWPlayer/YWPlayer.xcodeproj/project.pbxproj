@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		864E8D82C3534B926B6F0067 /* Pods_YWPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A35968F07FBBBB49F320C16 /* Pods_YWPlayer.framework */; };
+		F215A6A522D892CC00A86005 /* GZPlayerLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F215A6A222D892CC00A86005 /* GZPlayerLayerView.m */; };
+		F215A6A622D892CC00A86005 /* GZPlayerControlToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F215A6A422D892CC00A86005 /* GZPlayerControlToolBar.m */; };
+		F215A6A922D894E200A86005 /* MBProgressHUD+YWHud.m in Sources */ = {isa = PBXBuildFile; fileRef = F215A6A822D894E200A86005 /* MBProgressHUD+YWHud.m */; };
 		F27D7DBA229D390E007246B7 /* GZPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F27D7DB9229D390E007246B7 /* GZPlayerView.m */; };
 		F27D7DBD229D3ACD007246B7 /* CommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F27D7DBC229D3ACD007246B7 /* CommonTool.m */; };
 		F27D7DD3229D40B4007246B7 /* player_oval@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F27D7DBF229D40B4007246B7 /* player_oval@2x.png */; };
@@ -83,6 +86,12 @@
 		6D1085CF4CB88DFEBF775F93 /* Pods-YWPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-YWPlayer/Pods-YWPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		9A35968F07FBBBB49F320C16 /* Pods_YWPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YWPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B93098EEA48CA89B97CE93DA /* Pods-YWPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YWPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YWPlayer/Pods-YWPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		F215A6A122D892CC00A86005 /* GZPlayerLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZPlayerLayerView.h; sourceTree = "<group>"; };
+		F215A6A222D892CC00A86005 /* GZPlayerLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZPlayerLayerView.m; sourceTree = "<group>"; };
+		F215A6A322D892CC00A86005 /* GZPlayerControlToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZPlayerControlToolBar.h; sourceTree = "<group>"; };
+		F215A6A422D892CC00A86005 /* GZPlayerControlToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZPlayerControlToolBar.m; sourceTree = "<group>"; };
+		F215A6A722D894E200A86005 /* MBProgressHUD+YWHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+YWHud.h"; sourceTree = "<group>"; };
+		F215A6A822D894E200A86005 /* MBProgressHUD+YWHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+YWHud.m"; sourceTree = "<group>"; };
 		F27D7DB8229D390E007246B7 /* GZPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZPlayerView.h; sourceTree = "<group>"; };
 		F27D7DB9229D390E007246B7 /* GZPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZPlayerView.m; sourceTree = "<group>"; };
 		F27D7DBB229D3ACD007246B7 /* CommonTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonTool.h; sourceTree = "<group>"; };
@@ -193,6 +202,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F215A6AA22D8957600A86005 /* Resouce */ = {
+			isa = PBXGroup;
+			children = (
+				F27D7DBE229D40B4007246B7 /* player */,
+				F2CABB29229D37E9006B1B42 /* Music */,
+			);
+			path = Resouce;
+			sourceTree = "<group>";
+		};
+		F215A6AB22D8958700A86005 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F27D7DB8229D390E007246B7 /* GZPlayerView.h */,
+				F27D7DB9229D390E007246B7 /* GZPlayerView.m */,
+				F215A6A322D892CC00A86005 /* GZPlayerControlToolBar.h */,
+				F215A6A422D892CC00A86005 /* GZPlayerControlToolBar.m */,
+				F215A6A122D892CC00A86005 /* GZPlayerLayerView.h */,
+				F215A6A222D892CC00A86005 /* GZPlayerLayerView.m */,
+				F215A6A722D894E200A86005 /* MBProgressHUD+YWHud.h */,
+				F215A6A822D894E200A86005 /* MBProgressHUD+YWHud.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F27D7DBE229D40B4007246B7 /* player */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,22 +278,20 @@
 		F2CABAE6229D2977006B1B42 /* YWPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				F27D7DBE229D40B4007246B7 /* player */,
-				F2CABB29229D37E9006B1B42 /* Music */,
+				F215A6AB22D8958700A86005 /* View */,
+				F215A6AA22D8957600A86005 /* Resouce */,
 				F2CABB19229D298A006B1B42 /* YWPlayer */,
 				F2CABAE7229D2977006B1B42 /* AppDelegate.h */,
 				F2CABAE8229D2977006B1B42 /* AppDelegate.m */,
 				F2CABAEA229D2977006B1B42 /* ViewController.h */,
 				F2CABAEB229D2977006B1B42 /* ViewController.m */,
-				F27D7DB8229D390E007246B7 /* GZPlayerView.h */,
-				F27D7DB9229D390E007246B7 /* GZPlayerView.m */,
+				F27D7DBB229D3ACD007246B7 /* CommonTool.h */,
+				F27D7DBC229D3ACD007246B7 /* CommonTool.m */,
 				F2CABAED229D2977006B1B42 /* Main.storyboard */,
 				F2CABAF0229D2979006B1B42 /* Assets.xcassets */,
 				F2CABAF2229D2979006B1B42 /* LaunchScreen.storyboard */,
 				F2CABAF5229D2979006B1B42 /* Info.plist */,
 				F2CABAF6229D2979006B1B42 /* main.m */,
-				F27D7DBB229D3ACD007246B7 /* CommonTool.h */,
-				F27D7DBC229D3ACD007246B7 /* CommonTool.m */,
 			);
 			path = YWPlayer;
 			sourceTree = "<group>";
@@ -544,10 +575,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F215A6A922D894E200A86005 /* MBProgressHUD+YWHud.m in Sources */,
 				F2CABB27229D298A006B1B42 /* YWMusicPlayer.m in Sources */,
 				F2CABB24229D298A006B1B42 /* YWCache.m in Sources */,
 				F2CABAEC229D2977006B1B42 /* ViewController.m in Sources */,
 				F27D7DBA229D390E007246B7 /* GZPlayerView.m in Sources */,
+				F215A6A522D892CC00A86005 /* GZPlayerLayerView.m in Sources */,
+				F215A6A622D892CC00A86005 /* GZPlayerControlToolBar.m in Sources */,
 				F2CABB26229D298A006B1B42 /* YWAVPlayer.m in Sources */,
 				F2CABAF7229D2979006B1B42 /* main.m in Sources */,
 				F27D7DBD229D3ACD007246B7 /* CommonTool.m in Sources */,

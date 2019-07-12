@@ -84,6 +84,9 @@ NS_ASSUME_NONNULL_BEGIN
 //播放完成的回调，参数表示完成的方式
 @property (nonatomic,copy) YWMusicPlayerComplateBlock _Nullable playComplateBlock;
 
+///获取当前播放Url音视频总长度
+@property (nonatomic,copy) void(^ _Nullable playTotleTimeBlock)(float totleTime);
+
 //当前播放进度
 @property (nonatomic,copy) void(^ _Nullable playProgressBlock)(CMTime);
 
