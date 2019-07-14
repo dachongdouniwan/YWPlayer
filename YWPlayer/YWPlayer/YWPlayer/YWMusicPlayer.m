@@ -65,7 +65,7 @@ static YWMusicPlayer *musicPlayer = nil;
     dispatch_once(&onceToken, ^{
         musicPlayer = [super allocWithZone:zone];
         AVAudioSession *audioSession=[AVAudioSession sharedInstance];
-        [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
+        [audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
         [audioSession setActive:YES error:nil];
     });
     return  musicPlayer;

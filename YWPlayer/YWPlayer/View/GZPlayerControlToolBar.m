@@ -100,7 +100,7 @@
     }];
     
     [timeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self).with.offset(20*ScaleH);
+        make.left.equalTo(self).with.offset(5*ScaleH);
         make.centerY.equalTo(startButton.mas_centerY);
     }];
     
@@ -111,7 +111,7 @@
     }];
     
     [voiceButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.equalTo(self).with.offset(-80*ScaleH);
+        make.right.equalTo(self).with.offset(-40*ScaleH);
         make.centerY.equalTo(startButton.mas_centerY);
         make.size.mas_equalTo(CGSizeMake(25*ScaleH, 25*ScaleH));
     }];
@@ -219,6 +219,7 @@
             NSString *currentTimeString = [CommonTool switchSecondsToMinute:currentTime];
             self.currentTime = currentTime;
             self.currentTimeString = currentTimeString;
+            NSLog(@"%f----%@--%f",self.currentTime,currentTimeString,self.totleTime);
             self.slider.progress = currentTime/self.totleTime;
             self.timeLabel.attributedText = [CommonTool gz_stirngWith:currentTimeString two:[NSString stringWithFormat:@" / %@",[CommonTool switchSecondsToMinute:self.totleTime]] oneColor:[UIColor colorWithHexString:@"#FFC500"] twoColor:[UIColor blackColor] oneFont:[UIFont systemFontOfSize:18] twoFont:[UIFont systemFontOfSize:18]];
             !self.playProgressBlock?nil:self.playProgressBlock(currentTime);
@@ -230,12 +231,14 @@
         NSString *totleTimeString = [CommonTool switchSecondsToMinute:totleTime];
         self.totleTimeString = totleTimeString;
         self.totleTime = totleTime;
-        self.slider.cacheProgress = cacheTime/totleTime;
-        if ([self.timeLabel.text isEqualToString:@"00:00/00:00"]) {
-            self.timeLabel.text = [NSString stringWithFormat:@"00:00/%@",totleTimeString];
+        NSLog(@"%@--%f",totleTimeString,self.totleTime);
+        if (self.totleTime>0) {///容错处理防止nan错误
+            self.slider.cacheProgress = cacheTime/totleTime;
+            if ([self.timeLabel.text isEqualToString:@"00:00/00:00"]) {
+                self.timeLabel.text = [NSString stringWithFormat:@"00:00/%@",totleTimeString];
+            }
         }
     };
-    
     
     [YWAVPlayer shareInstance].playComplateBlock = ^(YWAVPlayerComplate type) {
         @strongify(self);

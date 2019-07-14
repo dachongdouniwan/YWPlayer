@@ -56,13 +56,24 @@ static YWAVPlayer *player = nil;
 }
 
 
+
+
+/**
+ 初始化播放器
+ AVAudioSessionCategoryAmbient ,不会打断其他app的音视频播放，支持混合播放
+ AVAudioSessionCategoryPlayAndRecord，会打断其他app的音视频播放
+ AVAudioSessionCategoryMultiRoute，会打断其他app的音视频播放
+ AVAudioSessionCategoryPlayback，会打断其他app的音视频播放
+ @param zone mm
+ @return ，mm
+ */
 +(instancetype)allocWithZone:(struct _NSZone *)zone{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         player = [super allocWithZone:zone];
-        AVAudioSession *audioSession=[AVAudioSession sharedInstance];
-        [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error:nil];
-        [audioSession setActive:YES error:nil];
+//        AVAudioSession *audioSession=[AVAudioSession sharedInstance];
+//        [audioSession setCategory:AVAudioSessionCategoryPlayback error:nil];
+//        [audioSession setActive:YES error:nil];
     });
     return  player;
 }
@@ -516,9 +527,11 @@ static YWAVPlayer *player = nil;
         float totleSeconds = CMTimeGetSeconds(playerItem.duration);
         NSTimeInterval totalBuffer = startSeconds + durationSeconds;//缓冲总长度
         NSLog(@"共缓冲：%.2f",totalBuffer);
-        !self.cacheTimeProgressBlock?nil:self.cacheTimeProgressBlock(totleSeconds,totalBuffer);
-        if ([self.delegate respondsToSelector:@selector(yw_plyaer:totleTime:currentTime:)]) {
-            [self.delegate yw_plyaer:self totleTime:totleSeconds currentTime:totalBuffer];
+        if (totalBuffer>0) {
+            !self.cacheTimeProgressBlock?nil:self.cacheTimeProgressBlock(totleSeconds,totalBuffer);
+            if ([self.delegate respondsToSelector:@selector(yw_plyaer:totleTime:currentTime:)]) {
+                [self.delegate yw_plyaer:self totleTime:totleSeconds currentTime:totalBuffer];
+            }
         }
     }
 }
