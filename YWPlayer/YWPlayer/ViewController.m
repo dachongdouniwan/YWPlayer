@@ -20,7 +20,7 @@
     [super viewDidLoad];
     
   
-    NSLog(@"master3333feture33333");
+    NSLog(@"master3333");
 
 
     
