@@ -27,6 +27,11 @@
 }
 
 
+-(void)test{
+    
+}
+
+
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     NSString *url = [[NSBundle mainBundle] pathForResource:@"朴翔 - 把悲伤留给自己 (Live)" ofType:@"mp3"];
