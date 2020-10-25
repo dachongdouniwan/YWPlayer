@@ -20,7 +20,7 @@
     [super viewDidLoad];
     
   
-    NSLog(@"feture");
+    NSLog(@"feture2222");
 
     
 }
