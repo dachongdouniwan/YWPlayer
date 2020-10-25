@@ -19,7 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"ssss");
+  
+    NSLog(@"master3333");
+
     
 }
 
