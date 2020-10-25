@@ -23,7 +23,7 @@
 
 
 -(void)test{
-    
+    NSLog(@"master");
 }
 
 
