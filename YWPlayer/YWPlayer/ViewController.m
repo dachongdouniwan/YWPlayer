@@ -18,12 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-  
-    NSLog(@"ssss");
-
-
-    
+    NSLog(@"dev");
 }
 
 
